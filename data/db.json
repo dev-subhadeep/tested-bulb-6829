@@ -1,0 +1,237 @@
+{
+  "doctors": [
+    [
+      {
+        "name": "Alex Johnson",
+        "specialization": "Gastroenterologist",
+        "fees": 100,
+        "experience": 14,
+        "patients": 420,
+        "bio": "Specializing in digestive disorders and treatments. Committed to improving gastrointestinal health.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      {
+        "name": "Olivia Wilson",
+        "specialization": "Dermatologist",
+        "fees": 130,
+        "experience": 16,
+        "patients": 480,
+        "bio": "Expert in skincare and cosmetic procedures. Dedicated to enhancing skin health and appearance.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/41.jpg"
+      },
+      {
+        "name": "Daniel Smith",
+        "specialization": "Neurologist",
+        "fees": 80,
+        "experience": 9,
+        "patients": 270,
+        "bio": "Experienced in diagnosing and treating neurological conditions. Focused on patient well-being.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "name": "Isabella Martinez",
+        "specialization": "Orthopedic Surgeon",
+        "fees": 160,
+        "experience": 18,
+        "patients": 620,
+        "bio": "Skilled in orthopedic surgeries and joint replacements. Dedicated to restoring mobility and function.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/8.jpg"
+      },
+      {
+        "name": "James Brown",
+        "specialization": "Cardiologist",
+        "fees": 85,
+        "experience": 11,
+        "patients": 320,
+        "bio": "Expert in heart care and interventions. Committed to ensuring cardiovascular health and wellness.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/14.jpg"
+      },
+      {
+        "name": "Ava Johnson",
+        "specialization": "Pediatrician",
+        "fees": 55,
+        "experience": 6,
+        "patients": 120,
+        "bio": "Passionate about providing the best care for children. Dedicated to their health and happiness.",
+        "rating": 4,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/19.jpg"
+      },
+      {
+        "name": "Ethan Smith",
+        "specialization": "Cardiologist",
+        "fees": 95,
+        "experience": 13,
+        "patients": 380,
+        "bio": "Experienced in heart surgeries and interventions. Committed to improving cardiac health.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/28.jpg"
+      },
+      {
+        "name": "Mia Martinez",
+        "specialization": "Dermatologist",
+        "fees": 110,
+        "experience": 14,
+        "patients": 420,
+        "bio": "Expert in diagnosing and treating skin conditions. Dedicated to enhancing skin quality.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      {
+        "name": "William Wilson",
+        "specialization": "Neurologist",
+        "fees": 75,
+        "experience": 8,
+        "patients": 250,
+        "bio": "Specializing in neurological disorders and treatments. Dedicated to patient care and well-being.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/41.jpg"
+      },
+      {
+        "name": "Emma Brown",
+        "specialization": "Orthopedic Surgeon",
+        "fees": 140,
+        "experience": 17,
+        "patients": 550,
+        "bio": "Skilled in orthopedic surgeries and procedures. Committed to restoring musculoskeletal health.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/45.jpg"
+      },
+      {
+        "name": "Liam Johnson",
+        "specialization": "Pediatrician",
+        "fees": 65,
+        "experience": 7,
+        "patients": 170,
+        "bio": "Dedicated to providing comprehensive care for children. Passionate about their health and happiness.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/5.jpg"
+      },
+      {
+        "name": "Aria Martinez",
+        "specialization": "Cardiologist",
+        "fees": 80,
+        "experience": 9,
+        "patients": 290,
+        "bio": "Experienced in cardiac care and interventions. Committed to ensuring heart health and well-being.",
+        "rating": 4,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/7.jpg"
+      },
+      {
+        "name": "Noah Smith",
+        "specialization": "Dermatologist",
+        "fees": 125,
+        "experience": 15,
+        "patients": 430,
+        "bio": "Expert in diagnosing and treating skin conditions. Focused on enhancing skin health and appearance.",
+        "rating": 5,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/36.jpg"
+      },
+      {
+        "name": "Ella Wilson",
+        "specialization": "Neurologist",
+        "fees": 90,
+        "experience": 11,
+        "patients": 320,
+        "bio": "Experienced in diagnosing and treating neurological disorders. Dedicated to patient well-being.",
+        "rating": 4,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/49.jpg"
+      },
+      {
+        "name": "Jackson Brown",
+        "specialization": "Orthopedic Surgeon",
+        "fees": 155,
+        "experience": 18,
+        "patients": 580,
+        "bio": "Skilled in orthopedic surgeries and joint replacements. Committed to restoring musculoskeletal health.",
+        "rating": 5,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/22.jpg"
+      },
+      {
+        "name": "Scarlett Martinez",
+        "specialization": "Pediatrician",
+        "fees": 60,
+        "experience": 6,
+        "patients": 130,
+        "bio": "Passionate about providing top-notch care for children. Dedicated to their health and happiness.",
+        "rating": 4,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/18.jpg"
+      },
+      {
+        "name": "Logan Johnson",
+        "specialization": "Cardiologist",
+        "fees": 90,
+        "experience": 12,
+        "patients": 340,
+        "bio": "Experienced in heart care and interventions. Committed to ensuring cardiovascular health.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/19.jpg"
+      },
+      {
+        "name": "Grace Wilson",
+        "specialization": "Dermatologist",
+        "fees": 120,
+        "experience": 14,
+        "patients": 410,
+        "bio": "Expert in skincare and cosmetic procedures. Dedicated to enhancing skin health and appearance.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/6.jpg"
+      },
+      {
+        "name": "Benjamin Smith",
+        "specialization": "Neurologist",
+        "fees": 85,
+        "experience": 10,
+        "patients": 300,
+        "bio": "Specializing in neurological disorders and treatments. Committed to improving patient well-being.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/10.jpg"
+      },
+      {
+        "name": "Chloe Brown",
+        "specialization": "Orthopedic Surgeon",
+        "fees": 145,
+        "experience": 16,
+        "patients": 520,
+        "bio": "Skilled in orthopedic surgeries and joint replacements. Committed to restoring musculoskeletal health.",
+        "rating": 5,
+        "gender": "female",
+        "image": "https://randomuser.me/api/portraits/women/9.jpg"
+      },
+      {
+        "name": "Henry Martinez",
+        "specialization": "Pediatrician",
+        "fees": 70,
+        "experience": 8,
+        "patients": 180,
+        "bio": "Passionate about providing comprehensive care for children. Dedicated to their health and happiness.",
+        "rating": 4,
+        "gender": "male",
+        "image": "https://randomuser.me/api/portraits/men/30.jpg"
+      }
+    ]
+  ]
+}
