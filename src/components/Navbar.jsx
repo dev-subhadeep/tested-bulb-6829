@@ -3,11 +3,21 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <div>
-      <Link to={"/"}>Home</Link>
-      <Link to={"/appointments"}>Appointments</Link>
-      <Link to={"/profile"}>Profile</Link>
-      <Link to={"/login"}>Login</Link>
+    <div className="fixed bottom-0 left-0 right-0 bg-blue-400 px-5 py-5">
+      <ul className="flex justify-between text-white">
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>
+          <Link to={"/appointments"}>Appointments</Link>
+        </li>
+        <li>
+          <Link to={"/profile"}>Profile</Link>
+        </li>
+        <li>
+          <Link to={"/login"}>Login</Link>
+        </li>
+      </ul>
     </div>
   )
 }

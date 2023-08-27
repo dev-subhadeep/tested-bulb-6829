@@ -6,7 +6,7 @@ const Doctors = ({ spec }) => {
   const { specialization } = useParams()
   return (
     <div>
-      <h1>{specialization}s</h1>
+      <h1 className="text-5xl">{specialization}s</h1>
       <FetchDoctors spec={specialization} />
     </div>
   )

@@ -12,7 +12,7 @@ import CreateAppointment from "../pages/CreateAppointment"
 
 const AllRoutes = () => {
   return (
-    <div>
+    <div className="h-screen flex justify-center items-center">
       <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/book"} element={<Book />} />

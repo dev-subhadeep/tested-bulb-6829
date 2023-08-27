@@ -75,7 +75,7 @@ const Appointments = () => {
   console.log(state)
   return (
     <div>
-      <h1>Appointments</h1>
+      <h1 className="text-5xl mb-4">Appointments</h1>
       {state.data.length &&
         state.data.map((appointment) => (
           <AppointmentCard

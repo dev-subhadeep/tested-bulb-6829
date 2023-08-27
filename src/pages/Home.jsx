@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate()
   const { authData } = useContext(UserContext)
   const [firstname, setFirstName] = useState("")
-  console.log(authData)
+  // console.log(authData)
   //   useEffect(() => {
   //     axios({
   //       url: `${import.meta.env.VITE_BASEURL}/users`,
@@ -18,9 +18,20 @@ const Home = () => {
   //     }).then((res) => console.log(res.data[0].firstname))
   //   }, [authData])
   return (
-    <div>
-      Welcome {authData.firstname ? authData.firstname : "Guest"}
-      <button onClick={() => navigate("/book")}>Book and Appointment</button>
+    <div className="flex flex-col">
+      <h1 className="text-5xl font-bold">Good Morning,</h1>
+      <div className="text-5xl">
+        {" "}
+        {authData.firstname ? authData.firstname : "Guest"}
+      </div>
+      <div>
+        <button
+          className="rounded bg-blue-600 py-2 px-2 text-white my-10"
+          onClick={() => navigate("/book")}
+        >
+          Book an Appointment
+        </button>
+      </div>
     </div>
   )
 }
