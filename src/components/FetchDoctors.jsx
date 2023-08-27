@@ -50,7 +50,7 @@ const FetchDoctors = ({ spec }) => {
       })
       .catch(() => dispatch({ type: "FAILURE" }))
   }, [])
-  console.log(state.data)
+  // console.log(state.data)
   return (
     <div>
       {state.data.length > 0 &&

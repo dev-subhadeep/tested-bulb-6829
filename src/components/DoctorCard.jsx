@@ -16,7 +16,7 @@ const DoctorCard = ({
   const navigate = useNavigate()
 
   const showDoc = () => {
-    console.log({ id })
+    navigate(`/appointment/${id}`)
   }
 
   return (
