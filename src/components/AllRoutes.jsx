@@ -7,6 +7,8 @@ import Login from "../pages/Login"
 import Book from "../pages/Book"
 import Doctors from "../pages/Doctors"
 import NotFound from "../pages/NotFound"
+import Register from "../pages/Register"
+import CreateAppointment from "../pages/CreateAppointment"
 
 const AllRoutes = () => {
   return (
@@ -16,8 +18,10 @@ const AllRoutes = () => {
         <Route path={"/book"} element={<Book />} />
         <Route path={"/doctors/:specialization"} element={<Doctors />} />
         <Route path={"/appointments"} element={<Appointments />} />
+        <Route path={"/appointment/:doctor"} element={<CreateAppointment />} />
         <Route path={"/profile"} element={<UserProfile />} />
         <Route path={"/login"} element={<Login />} />
+        <Route path={"/register"} element={<Register />} />
         <Route path={"/*"} element={<NotFound />} />
       </Routes>
     </div>
