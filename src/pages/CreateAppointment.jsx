@@ -3,6 +3,8 @@ import React, { useContext, useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { UserContext } from "../context/UserData"
 
+import { AiFillCalendar } from "react-icons/ai"
+
 const months = [
   "January",
   "February",
@@ -72,7 +74,7 @@ const CreateAppointment = () => {
 
   return (
     <div>
-      <p>Set Up Appointment with</p>
+      <p>Set Up Appointment with </p>
       <p className="mb-5">
         {" "}
         <span className="text-3xl"> {doctorName}</span>

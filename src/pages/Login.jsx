@@ -27,7 +27,7 @@ const Login = () => {
     }).then((res) => {
       if (res.data[0].password === creds.password) {
         login(res.data[0].id, res.data[0].firstname)
-        navigate("/")
+        navigate("/home")
       } else {
         console.log("galat hai")
       }
@@ -35,6 +35,9 @@ const Login = () => {
   }
   return (
     <div className="w-full">
+      <div className="w-20">
+        <img src="./logo.png" alt="" />
+      </div>
       <h1 className="text-5xl">Login</h1>
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"

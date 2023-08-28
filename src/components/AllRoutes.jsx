@@ -9,18 +9,19 @@ import Doctors from "../pages/Doctors"
 import NotFound from "../pages/NotFound"
 import Register from "../pages/Register"
 import CreateAppointment from "../pages/CreateAppointment"
+import Protected from "./Protected"
 
 const AllRoutes = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="flex justify-center items-center mb-5">
       <Routes>
-        <Route path={"/"} element={<Home />} />
+        <Route path={"/home"} element={<Home />} />
         <Route path={"/book"} element={<Book />} />
         <Route path={"/doctors/:specialization"} element={<Doctors />} />
         <Route path={"/appointments"} element={<Appointments />} />
         <Route path={"/appointment/:doctor"} element={<CreateAppointment />} />
         <Route path={"/profile"} element={<UserProfile />} />
-        <Route path={"/login"} element={<Login />} />
+        <Route path={"/"} element={<Login />} />
         <Route path={"/register"} element={<Register />} />
         <Route path={"/*"} element={<NotFound />} />
       </Routes>

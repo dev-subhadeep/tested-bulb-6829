@@ -5,7 +5,7 @@ import { Routes, Route, useParams } from "react-router-dom"
 const Doctors = ({ spec }) => {
   const { specialization } = useParams()
   return (
-    <div>
+    <div className="py-5">
       <h1 className="text-5xl">{specialization}s</h1>
       <FetchDoctors spec={specialization} />
     </div>

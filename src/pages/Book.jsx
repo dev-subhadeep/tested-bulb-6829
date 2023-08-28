@@ -5,8 +5,8 @@ import Doctors from "./Doctors"
 const Book = () => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-4">
-        <h1 className="text-5xl col-span-3 mb-10">Choose a Specialist</h1>
+      <div className="grid grid-cols-2 gap-4 mb-10">
+        <h1 className="text-5xl col-span-2 mb-5">Choose a Specialist</h1>
         <Link to="/doctors/Cardiologist" className="card">
           <div>
             <img src="./icons/heart.png" alt="" />
@@ -23,7 +23,7 @@ const Book = () => {
           <div>
             <img src="./icons/intestine.png" alt="" />
           </div>
-          Gastroenterologist
+          GI Doctor
         </Link>
         <Link to="/doctors/Neurologist" className="card">
           <div>

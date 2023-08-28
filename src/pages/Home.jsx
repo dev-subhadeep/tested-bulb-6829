@@ -19,18 +19,29 @@ const Home = () => {
   //   }, [authData])
   return (
     <div className="flex flex-col">
-      <h1 className="text-5xl font-bold">Good Morning,</h1>
+      <div className="w-20">
+        <img src="./logo.png" alt="" />
+      </div>
+      <h1 className="text-5xl font-bold">Hi there,</h1>
       <div className="text-5xl">
         {" "}
         {authData.firstname ? authData.firstname : "Guest"}
       </div>
-      <div>
-        <button
-          className="rounded bg-blue-600 py-2 px-2 text-white my-10"
-          onClick={() => navigate("/book")}
-        >
-          Book an Appointment
-        </button>
+      <div className="mt-10">
+        <div className="grid grid-cols-2 gap-4 mb-10">
+          <Link to="/doctors/Cardiologist" className="card">
+            <div>
+              <img src="./pills.png" alt="" />
+            </div>
+            Purchase Medicine
+          </Link>
+          <Link to="/book" className="card">
+            <div>
+              <img src="./schedule.png" alt="" />
+            </div>
+            Schedule Appointment
+          </Link>
+        </div>
       </div>
     </div>
   )

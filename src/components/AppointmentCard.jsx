@@ -15,7 +15,7 @@ const AppointmentCard = ({
         <img src={image} alt={doctor} className="rounded-full" />
       </div>
       <div>
-        <h2 className="text-3xl mt-4">{doctor}</h2>
+        <h2 className="text-3xl">{doctor}</h2>
         <p>
           Meeting on{" "}
           <span className="font-bold">

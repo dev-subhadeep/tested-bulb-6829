@@ -10,7 +10,7 @@ const Navbar = () => {
       <ul className="flex justify-between text-white">
         <li className="flex flex-col justify-center items-center">
           <BiHomeAlt2 size="2em" />
-          <Link to={"/"}>Home</Link>
+          <Link to={"/home"}>Home</Link>
         </li>
         <li className="flex flex-col justify-center items-center">
           <AiTwotoneCalendar size="2em" />
@@ -20,9 +20,9 @@ const Navbar = () => {
           <BsFillPersonFill size="2em" />
           <Link to={"/profile"}>Profile</Link>
         </li>
-        <li className="flex flex-col justify-center items-center">
+        {/* <li className="flex flex-col justify-center items-center">
           <Link to={"/login"}>Login</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   )

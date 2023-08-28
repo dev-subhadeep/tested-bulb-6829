@@ -29,16 +29,19 @@ const Register = () => {
       method: "post",
       data: formData,
     })
-      .then((res) => navigate("/register"))
+      .then(navigate("/"))
       .catch((err) => alert("Account not found"))
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full py-5">
+      <div className="w-20">
+        <img src="./logo.png" alt="" />
+      </div>
       <h1 className="text-5xl">Register</h1>
       <form
         onSubmit={handleSubmit}
-        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
           <input
@@ -89,7 +92,7 @@ const Register = () => {
           </select>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-4">
           <input
             type="text"
             name="image"
