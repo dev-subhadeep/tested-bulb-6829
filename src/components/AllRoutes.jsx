@@ -15,12 +15,54 @@ const AllRoutes = () => {
   return (
     <div className="flex justify-center items-center mb-5">
       <Routes>
-        <Route path={"/home"} element={<Home />} />
-        <Route path={"/book"} element={<Book />} />
-        <Route path={"/doctors/:specialization"} element={<Doctors />} />
-        <Route path={"/appointments"} element={<Appointments />} />
-        <Route path={"/appointment/:doctor"} element={<CreateAppointment />} />
-        <Route path={"/profile"} element={<UserProfile />} />
+        <Route
+          path={"/home"}
+          element={
+            <Protected>
+              <Home />
+            </Protected>
+          }
+        />
+        <Route
+          path={"/book"}
+          element={
+            <Protected>
+              <Book />
+            </Protected>
+          }
+        />
+        <Route
+          path={"/doctors/:specialization"}
+          element={
+            <Protected>
+              <Doctors />
+            </Protected>
+          }
+        />
+        <Route
+          path={"/appointments"}
+          element={
+            <Protected>
+              <Appointments />
+            </Protected>
+          }
+        />
+        <Route
+          path={"/appointment/:doctor"}
+          element={
+            <Protected>
+              <CreateAppointment />
+            </Protected>
+          }
+        />
+        <Route
+          path={"/profile"}
+          element={
+            <Protected>
+              <UserProfile />
+            </Protected>
+          }
+        />
         <Route path={"/"} element={<Login />} />
         <Route path={"/register"} element={<Register />} />
         <Route path={"/*"} element={<NotFound />} />

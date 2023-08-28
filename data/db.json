@@ -726,6 +726,17 @@
       "age": "37",
       "image": "https://randomuser.me/api/portraits/women/58.jpg",
       "id": 43
+    },
+    {
+      "firstname": "Enid",
+      "lastname": "Blyton",
+      "email": "enid@gmail.com",
+      "password": "en123",
+      "sex": "female",
+      "weight": "100",
+      "age": "56",
+      "image": "",
+      "id": 44
     }
   ],
   "appointments": [
@@ -958,6 +969,16 @@
       "time_hr": 10,
       "time_min": 12,
       "id": 23
+    },
+    {
+      "doctorId": 5,
+      "userId": 44,
+      "date_day": 11,
+      "date_month": "October",
+      "date_year": 2023,
+      "time_hr": 10,
+      "time_min": 15,
+      "id": 24
     }
   ]
 }

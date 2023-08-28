@@ -1,15 +1,15 @@
 import React, { useContext } from "react"
-import UserData from "../context/UserData"
+import { UserContext } from "../context/UserData"
 import { Navigate } from "react-router-dom"
 
-const Protected = ({ path, element }) => {
-  const { authData } = useContext(UserData)
+const Protected = ({ children }) => {
+  const { authData } = useContext(UserContext)
 
   if (!authData.isLoggedIn) {
-    return <Navigate to="/login" />
+    return <Navigate to="/" />
   }
 
-  return <Route path={path} element={element} />
+  return children
 }
 
 export default Protected
