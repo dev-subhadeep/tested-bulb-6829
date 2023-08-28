@@ -42,7 +42,7 @@ const FetchDoctors = ({ spec }) => {
   useEffect(() => {
     dispatch({ type: "LOADING" })
     axios({
-      url: `http://localhost:8080/doctors?specialization=${spec}`,
+      url: `${import.meta.env.VITE_BASEURL}/doctors?specialization=${spec}`,
       method: "get",
     })
       .then((res) => {

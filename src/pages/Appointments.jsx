@@ -73,6 +73,9 @@ const Appointments = () => {
     }
   }, [])
   console.log(state)
+  if (state.loading) {
+    return <p>Loading...</p>
+  }
   return (
     <div>
       <h1 className="text-5xl mb-4">Appointments</h1>

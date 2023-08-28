@@ -1,6 +1,6 @@
 import axios from "axios"
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +13,7 @@ const Register = () => {
     age: "",
     image: "",
   })
-
+  const navigate = useNavigate()
   const handleFormData = (e) => {
     setFormData({
       ...formData,
@@ -29,6 +29,8 @@ const Register = () => {
       method: "post",
       data: formData,
     })
+      .then((res) => navigate("/register"))
+      .catch((err) => alert("Account not found"))
   }
 
   return (

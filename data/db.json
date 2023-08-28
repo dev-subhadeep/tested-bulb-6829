@@ -715,6 +715,17 @@
       "age": 44,
       "image": "https://media.licdn.com/dms/image/C4D03AQHMQbpvt1REMQ/profile-displayphoto-shrink_800_800/0/1659507234594?e=1698883200&v=beta&t=EXhpRwukEYUqdWwNQ3vJq3kKbJAax7YHflZaKXHhuCc",
       "id": 42
+    },
+    {
+      "firstname": "Lasama",
+      "lastname": "Odin",
+      "email": "odin@gmail.com",
+      "password": "od123",
+      "sex": "male",
+      "weight": "56",
+      "age": "37",
+      "image": "https://randomuser.me/api/portraits/women/58.jpg",
+      "id": 43
     }
   ],
   "appointments": [
@@ -937,6 +948,16 @@
       "time_hr": 10,
       "time_min": 7,
       "id": 22
+    },
+    {
+      "doctorId": 6,
+      "userId": 43,
+      "date_day": 8,
+      "date_month": "October",
+      "date_year": 2023,
+      "time_hr": 10,
+      "time_min": 12,
+      "id": 23
     }
   ]
 }

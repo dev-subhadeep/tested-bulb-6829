@@ -1,6 +1,6 @@
 import axios from "axios"
 import React, { useContext, useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { UserContext } from "../context/UserData"
 
 const months = [
@@ -31,6 +31,7 @@ const CreateAppointment = () => {
     time_hr: "",
     time_min: "",
   })
+  const navigate = useNavigate()
   useEffect(() => {
     axios({
       url: `${import.meta.env.VITE_BASEURL}/doctors`,
@@ -66,7 +67,7 @@ const CreateAppointment = () => {
       url: `${import.meta.env.VITE_BASEURL}/appointments`,
       method: "post",
       data: formData,
-    })
+    }).then(navigate("/appointments"))
   }
 
   return (

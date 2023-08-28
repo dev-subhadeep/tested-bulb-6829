@@ -1,13 +1,14 @@
 import React, { useContext, useState } from "react"
 import { UserContext } from "../context/UserData"
 import axios from "axios"
-import { Navigate, Link } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 
 const usersURL = `${import.meta.env.VITE_BASEURL}/users`
 
 const Login = () => {
   const { login } = useContext(UserContext)
   const [creds, setCreds] = useState({ email: "", password: "" })
+  const navigate = useNavigate()
   const handleFormData = (e) => {
     setCreds({
       ...creds,
@@ -26,8 +27,7 @@ const Login = () => {
     }).then((res) => {
       if (res.data[0].password === creds.password) {
         login(res.data[0].id, res.data[0].firstname)
-        ;<Navigate to="/" replace={true} />
-        console.log(res.data[0].id)
+        navigate("/")
       } else {
         console.log("galat hai")
       }
