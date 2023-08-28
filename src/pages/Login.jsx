@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react"
 import { UserContext } from "../context/UserData"
 import axios from "axios"
-import { useNavigate, Link } from "react-router-dom"
+import { useNavigate, Link, Navigate } from "react-router-dom"
 
 const usersURL = `${import.meta.env.VITE_BASEURL}/users`
 
 const Login = () => {
-  const { login } = useContext(UserContext)
+  const { login, authData } = useContext(UserContext)
   const [creds, setCreds] = useState({ email: "", password: "" })
   const navigate = useNavigate()
   const handleFormData = (e) => {
@@ -29,9 +29,13 @@ const Login = () => {
         login(res.data[0].id, res.data[0].firstname)
         navigate("/home")
       } else {
-        console.log("galat hai")
+        alert("Account not found. Retry")
+        console.log("wrong password")
       }
     })
+  }
+  if (authData.isLoggedIn) {
+    return <Navigate to={"/home"} />
   }
   return (
     <div className="w-full">

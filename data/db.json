@@ -737,6 +737,17 @@
       "age": "56",
       "image": "",
       "id": 44
+    },
+    {
+      "firstname": "Sherlock",
+      "lastname": "H",
+      "email": "sh@gmail.com",
+      "password": "221b",
+      "sex": "male",
+      "weight": "223",
+      "age": "22",
+      "image": "",
+      "id": 45
     }
   ],
   "appointments": [
@@ -979,6 +990,26 @@
       "time_hr": 10,
       "time_min": 15,
       "id": 24
+    },
+    {
+      "doctorId": 3,
+      "userId": 44,
+      "date_day": 11,
+      "date_month": "August",
+      "date_year": 2024,
+      "time_hr": 11,
+      "time_min": 15,
+      "id": 25
+    },
+    {
+      "doctorId": 3,
+      "userId": 45,
+      "date_day": 11,
+      "date_month": "October",
+      "date_year": 2023,
+      "time_hr": 13,
+      "time_min": 13,
+      "id": 26
     }
   ]
 }
