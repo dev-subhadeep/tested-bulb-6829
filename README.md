@@ -1,3 +1,7 @@
 # HiDoc
 
-[https://hidocapp.netlify.app/](https://hidocapp.netlify.app/)
+A mobile-first app where you can book appointment with doctors.
+
+Deployed URL: [https://hidocapp.netlify.app/](https://hidocapp.netlify.app/)
+
+
